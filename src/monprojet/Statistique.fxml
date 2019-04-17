@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monprojet.StatistiqueController">
+   <children>
+      <PieChart fx:id="pie" layoutX="123.0" layoutY="81.0" prefHeight="261.0" prefWidth="355.0" />
+      <Label layoutX="34.0" layoutY="43.0" prefHeight="43.0" prefWidth="261.0" text="Statistique">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="retour" layoutX="443.0" layoutY="342.0" onAction="#retour" prefHeight="39.0" prefWidth="106.0" text="Retour">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

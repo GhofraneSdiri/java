@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monprojet.AjouterCategorieController">
+   <children>
+      <JFXTextField fx:id="nom" labelFloat="true" layoutX="85.0" layoutY="167.0" maxWidth="312.0" minWidth="171.0" prefHeight="33.0" prefWidth="171.0" promptText="Nom">
+         <effect>
+            <Glow level="0.72" />
+         </effect>
+      </JFXTextField>
+      <Label layoutX="24.0" layoutY="43.0" prefHeight="43.0" prefWidth="261.0" text="Categorie">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="supprimer" layoutX="222.0" layoutY="273.0" onAction="#supprimer" prefHeight="39.0" prefWidth="117.0" text="Supprimer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="ListCategoris" layoutX="351.0" layoutY="102.0" prefHeight="273.0" prefWidth="202.0">
+        <columns>
+          <TableColumn fx:id="colNom" prefWidth="201.0" text="Nom Categorie" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="modifier" layoutX="123.0" layoutY="273.0" onAction="#modifier" prefHeight="39.0" prefWidth="99.0" text="Modifier">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="ajouter" layoutX="24.0" layoutY="273.0" onAction="#ajouter" prefHeight="39.0" prefWidth="99.0" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="retour" layoutX="173.0" layoutY="328.0" onAction="#retour" prefHeight="39.0" prefWidth="99.0" text="Retour">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="search" focusColor="#00d09f" labelFloat="true" layoutX="447.0" layoutY="52.0" maxWidth="418.0" minWidth="106.0" onAction="#find" prefHeight="26.0" prefWidth="106.0" promptText="Rechercher ..." unFocusColor="#dadada" />
+      <JFXButton fx:id="services" layoutX="67.0" layoutY="328.0" onAction="#services" prefHeight="39.0" prefWidth="106.0" text="Services">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
